@@ -1,0 +1,12 @@
+syntax="proto3";
+option java_package = "com.absurd.serial.protobuf";
+option optimize_for = CODE_SIZE;
+package protobuf;
+
+message User{
+    int32         id       = 1;
+    string        userName = 2;
+    string        password = 3;
+}
+
+

@@ -11,6 +11,11 @@
     <modules>
         <module>java-serial</module>
         <module>jackson-serial</module>
+        <module>gson-serial</module>
+        <module>fastjson-serial</module>
+        <module>kryo-serial</module>
+        <module>thrift-serial</module>
+        <module>protobuf-serial</module>
     </modules>
 
     <properties>
@@ -22,6 +27,9 @@
         <jackson.version>2.8.5</jackson.version>
         <gson.version>2.8.0</gson.version>
         <fastjson.version>1.2.23</fastjson.version>
+        <kryo.version>4.0.0</kryo.version>
+        <thrift.version>0.9.3</thrift.version>
+        <protobuf.version>3.1.0</protobuf.version>
         <lombok.version>1.16.12</lombok.version>
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
@@ -54,7 +62,21 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>kryo</artifactId>
+                <version>${kryo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>${thrift.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
